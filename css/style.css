@@ -1,0 +1,182 @@
+﻿
+* {
+    box-sizing: border-box;
+}
+
+
+#navbar {
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(6px);
+}
+
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.3);
+}
+
+
+#home {
+    background: url('../img/fundo.png') center/cover no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+
+#home h1 {
+    font-size: clamp(60px, 10vw, 100px);
+    color: rgb(124, 124, 173);
+}
+
+#home p {
+    color: rgb(143, 131, 184);
+    font-size: clamp(20px, 4vw, 40px);
+}
+
+
+.game-card {
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+
+.video-jogo {
+    width: 80%;
+    max-width: 900px;
+    transition: transform 0.3s ease;
+}
+
+.video-jogo:hover {
+    transform: scale(1.02);
+}
+
+
+#letrinhas {
+    font-size: clamp(30px, 5vw, 50px);
+}
+
+.lista-jogos li {
+    background-color: #585e79;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 1.8;
+    transition: background-color 0.2s;
+}
+
+.lista-jogos li:hover {
+    background-color: #0ea5e9;
+    color: black;
+}
+
+
+.tabela-jogos {
+    width: 60%;
+}
+
+.tabela-jogos thead th {
+    background-color: #0ea5e9;
+    color: black;
+}
+
+
+.form-control:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 0.2rem rgba(14, 165, 233, 0.25);
+    background-color: #1e293b !important;
+    color: white !important;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #cbd5f5;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: #0ea5e9;
+}
+
+.btn-tema {
+    top: 80px;
+    right: 20px;
+    z-index: 1050;
+    background-color: #0ea5e9;
+    color: black;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.btn-tema:hover {
+    background-color: #38bdf8;
+    color: black;
+}
+
+.mensagem-dinamica {
+    max-width: 720px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background: rgba(2, 6, 23, 0.72);
+    color: #e0f2fe;
+    font-size: clamp(18px, 3vw, 26px);
+    font-weight: 600;
+}
+
+body.modo-claro {
+    background-color: #f8fafc;
+    color: #111827;
+}
+
+body.modo-claro #navbar,
+body.modo-claro #sobre,
+body.modo-claro #jogos,
+body.modo-claro #listinha,
+body.modo-claro #contato,
+body.modo-claro footer {
+    background: #f8fafc !important;
+    color: #111827 !important;
+}
+
+body.modo-claro .navbar-brand,
+body.modo-claro .nav-link,
+body.modo-claro #sobre,
+body.modo-claro #jogos,
+body.modo-claro #contato,
+body.modo-claro footer,
+body.modo-claro #letrinhas {
+    color: #111827 !important;
+}
+
+body.modo-claro .lista-jogos li {
+    background-color: #dbeafe;
+    color: #111827;
+}
+
+body.modo-claro .table-dark {
+    --bs-table-bg: #e0f2fe;
+    --bs-table-color: #111827;
+    --bs-table-hover-bg: #bae6fd;
+    --bs-table-hover-color: #111827;
+    border-color: #7dd3fc;
+}
+
+body.modo-claro form,
+body.modo-claro .form-control {
+    background: #ffffff !important;
+    color: #111827 !important;
+}
+
+body.modo-claro .footer-link {
+    color: #0369a1;
+}
+
+body.modo-claro .mensagem-dinamica {
+    background: rgba(255, 255, 255, 0.86);
+    color: #0f172a;
+}
